@@ -13,7 +13,6 @@ public class StoreBasketCommandValidator : AbstractValidator<StoreBasketCommand>
         RuleFor(x => x.Cart.UserName).NotEmpty().WithMessage("UserName is required");
     }
 }
-//, DiscountProtoService.DiscountProtoServiceClient discountProto
 public class StoreBasketCommandHandler
     (IBasketRepository repository,DiscountProtoService.DiscountProtoServiceClient discountProto)
     : ICommandHandler<StoreBasketCommand, StoreBasketResult>
