@@ -18,17 +18,17 @@ public static class DependencyInjection
         return services;
     }
 
-    //public static WebApplication UseApiServices(this WebApplication app)
-    //{
-    //    app.MapCarter();
+    public static WebApplication UseApiServices(this WebApplication app)
+    {
+        //app.MapCarter();
 
-    //    app.UseExceptionHandler(options => { });
-    //    app.UseHealthChecks("/health",
-    //        new HealthCheckOptions
-    //        {
-    //            ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-    //        });
+        //app.UseExceptionHandler(options => { });
+        //app.UseHealthChecks("/health",
+        //    new HealthCheckOptions
+        //    {
+        //        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+        //    });
 
-    //    return app;
-    //}
+        return app;
+    }
 }
