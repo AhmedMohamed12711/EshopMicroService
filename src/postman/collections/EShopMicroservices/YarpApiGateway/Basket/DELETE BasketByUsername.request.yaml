@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{yarp_url}}/basket-service/basket/swn"
+method: DELETE
+settings: {}
+order: 3000

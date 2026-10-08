@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{Url}}api/Analysis"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"inputType\": \"Text\",\r
+
+    \  \"textInput\": \"Test\",\r
+
+    \  \"note\": \"Alert test\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

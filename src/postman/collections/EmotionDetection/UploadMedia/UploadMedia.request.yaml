@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Url}}api/media/upload"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: File
+      src: postman-cloud:///1f10783f-f996-4830-a2f9-a2d55673a0fe
+    - type: text
+      key: MediaType
+      value: Image
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

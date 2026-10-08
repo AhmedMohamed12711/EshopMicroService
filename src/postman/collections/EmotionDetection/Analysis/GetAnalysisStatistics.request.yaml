@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{Url}}api/Analysis/statistics"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 8000

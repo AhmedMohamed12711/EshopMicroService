@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{BaseUrl}}/api/Authentication/Address"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"FirstName\":\"Ahmed\",\r
+
+    \    \"LastName\":\"Mohamed\",\r
+
+    \    \"Street\":\"Eltahrer\",\r
+
+    \    \"City\":\"Cairo\",\r
+
+    \    \"Country\":\"Egypt\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 4000

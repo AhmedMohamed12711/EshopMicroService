@@ -1,0 +1,17 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/users/updateMe/
+method: PUT
+headers:
+  token: ""
+body:
+  type: json
+  content: |-
+    {
+        "name": "Ahmed Abd Al-Muti",
+        "email": "ahmedmutt2i2@gmail.com",
+        "phone": "01010700700"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 7000

@@ -1,0 +1,11 @@
+name: Docker
+values:
+  - key: catalog_url
+    value: ""
+  - key: basket_url
+    value: ""
+  - key: ordering_url
+    value: ""
+  - key: yarp_url
+    value: ""
+color: 0

@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/addresses/62289e39461209e5ee6a2939
+method: GET
+headers:
+  token: ""
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 3000

@@ -1,0 +1,46 @@
+$kind: http-request
+url: "{{basket_url}}/basket/checkout"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \t\"BasketCheckoutDto\": \r
+
+    \        {\r
+
+    \t\t  \"userName\": \"swn\",\r
+
+    \t\t  \"CustomerId\": \"189dc8dc-990f-48e0-a37b-e6f2b60b9d7d\",\r
+
+    \t\t  \"totalPrice\": 0,\r
+
+    \t\t  \"firstName\": \"swn\",\r
+
+    \t\t  \"lastName\": \"swn\",\r
+
+    \t\t  \"emailAddress\": \"test@test.com\",\r
+
+    \t\t  \"addressLine\": \"34 Charles Street\",\r
+
+    \t\t  \"country\": \"USA\",\r
+
+    \t\t  \"state\": \"Michigan\",\r
+
+    \t\t  \"zipCode\": \"48198\",\r
+
+    \t\t  \"cardName\": \"swn\",\r
+
+    \t\t  \"cardNumber\": \"485-3184\",\r
+
+    \t\t  \"expiration\": \"11/30\",\r
+
+    \t\t  \"cvv\": \"333\",\r
+
+    \t\t  \"paymentMethod\": 1\r
+
+    \t\t}\r
+
+    }"
+settings: {}
+order: 4000

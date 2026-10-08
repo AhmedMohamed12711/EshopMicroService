@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{BaseUrl}}/api/Baskets?Key=basket123"
+method: GET
+headers:
+  - key: key
+    value: basket123
+    disabled: true
+queryParams:
+  Key: basket123
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 2000

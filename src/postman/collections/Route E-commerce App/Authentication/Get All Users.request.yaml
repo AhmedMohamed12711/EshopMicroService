@@ -1,0 +1,17 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/users
+method: GET
+queryParams:
+  - key: limit
+    value: "10"
+    disabled: true
+  - key: keyword
+    value: a
+    disabled: true
+body:
+  type: text
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 8000

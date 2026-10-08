@@ -40,17 +40,17 @@ services:
       context: .
       dockerfile: Services/Ordering/Ordering.API/Dockerfile
 
-  # yarpapigateway:
-  #   image: ${DOCKER_REGISTRY-}yarpapigateway
-  #   build:
-  #     context: .
-  #     dockerfile: ApiGateways/YarpApiGateway/Dockerfile
-
-  # shopping.web:
+ #shopping.web:
   #   image: ${DOCKER_REGISTRY-}shoppingweb
   #   build:
   #     context: .
   #     dockerfile: WebApps/Shopping.Web/Dockerfile
+
+  yarbapigateway:
+    image: ${DOCKER_REGISTRY-}yarbapigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/YarbApiGateway/Dockerfile
 
 volumes:
   postgres_catalog:

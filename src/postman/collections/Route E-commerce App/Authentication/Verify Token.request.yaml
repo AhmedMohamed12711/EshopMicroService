@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/auth/verifyToken
+method: GET
+headers:
+  token: ""
+settings: {}
+order: 9000

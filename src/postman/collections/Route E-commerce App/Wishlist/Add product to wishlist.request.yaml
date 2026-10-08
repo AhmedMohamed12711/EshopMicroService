@@ -1,0 +1,15 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/wishlist
+method: POST
+headers:
+  token: ""
+body:
+  type: json
+  content: |-
+    {
+        "productId": "6428ebc6dc1175abc65ca0b9"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 1000

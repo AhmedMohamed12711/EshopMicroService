@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Url}}api/Analysis/13?userId=6b72d3e6-033d-4f1b-81d9-a0036c2c56e1"
+method: GET
+queryParams:
+  userId: 6b72d3e6-033d-4f1b-81d9-a0036c2c56e1
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 2000

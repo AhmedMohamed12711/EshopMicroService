@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Url}}api/analysis/5/process-text-result"
+method: POST
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 10000

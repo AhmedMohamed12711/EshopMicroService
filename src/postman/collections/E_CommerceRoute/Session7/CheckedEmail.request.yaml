@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{BaseUrl}}/api/Authentication/CheckEmail?Email=Ahmed@gmail.com"
+method: GET
+queryParams:
+  Email: Ahmed@gmail.com
+settings: {}
+order: 1000

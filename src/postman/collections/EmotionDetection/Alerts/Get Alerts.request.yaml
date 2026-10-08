@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{Url}}api/alert?Page=1&pageSize=10&severity=High&resolved=false"
+method: GET
+queryParams:
+  Page: "1"
+  pageSize: "10"
+  severity: High
+  resolved: "false"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

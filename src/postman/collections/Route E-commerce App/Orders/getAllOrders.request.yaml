@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/orders/
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 2000

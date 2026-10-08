@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Url}}api/Analysis/1002/complete"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"dominantEmotion\": \"Sad\",\r
+
+    \  \"avgConfidence\": 0.9\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 7000

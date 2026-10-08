@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{catalog_url}}/products"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"Name\": \"New Product A\",\r
+
+    \    \"Category\": [\"c1\", \"c2\"],\r
+
+    \    \"Description\": \"Description Product A\",\r
+
+    \    \"ImageFile\": \"ImageFile Product A\",\r
+
+    \    \"Price\": 199\r
+
+    }"
+settings: {}
+order: 4000

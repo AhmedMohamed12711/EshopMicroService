@@ -1,0 +1,19 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/orders/65cb72e38462ab02c71ee050
+method: POST
+headers:
+  token: ""
+body:
+  type: json
+  content: |-
+    {
+        "shippingAddress":{
+            "details": "details",
+            "phone": "01010800921",
+            "city": "Cairo"
+            }
+    }
+auth:
+  type: noauth
+settings: {}
+order: 1000

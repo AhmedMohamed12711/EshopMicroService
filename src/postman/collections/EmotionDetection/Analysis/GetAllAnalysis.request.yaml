@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Url}}api/Analysis?page=1&pageSize=10"
+method: GET
+queryParams:
+  page: "1"
+  pageSize: "10"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 3000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{Url}}api/Analysis/11/status"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"status\": \"Processing\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 6000

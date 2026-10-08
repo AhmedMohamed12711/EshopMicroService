@@ -1,0 +1,106 @@
+$kind: http-request
+url: "{{ordering_url}}/orders"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \t\"Order\": \r
+
+    \        {\r
+
+    \        \t\"CustomerId\": \"58c49479-ec65-4de2-86e7-033c546291aa\",\r
+
+    \            \"OrderName\": \"ORD_4\",\r
+
+    \            \"ShippingAddress\": \r
+
+    \            \t{\r
+
+    \            \t\t\"FirstName\": \"Valentina\",\r
+
+    \t                \"LastName\": \"Legros\",\r
+
+    \t                \"EmailAddress\": \"valeg@xmail.com\",\r
+
+    \t                \"AddressLine\": \"Wiegand Pass Suite 825\",\r
+
+    \t                \"Country\": \"USA\",\r
+
+    \t                \"State\": \"Oklahoma\",\r
+
+    \t                \"ZipCode\": \"41248\"\r
+
+    \            \t},\r
+
+    \            \"BillingAddress\": \r
+
+    \            \t{\r
+
+    \            \t\t\"FirstName\": \"Valentina\",\r
+
+    \t                \"LastName\": \"Legros\",\r
+
+    \t                \"EmailAddress\": \"valeg@xmail.com\",\r
+
+    \t                \"AddressLine\": \"Wiegand Pass Suite 825\",\r
+
+    \t                \"Country\": \"USA\",\r
+
+    \t                \"State\": \"Oklahoma\",\r
+
+    \t                \"ZipCode\": \"41248\"\r
+
+    \            \t},\r
+
+    \            \"Payment\": \r
+
+    \            \t{\r
+
+    \            \t\t\"CardName\": \"CARD_1\",\r
+
+    \t                \"CardNumber\": \"875-444-3739\",\r
+
+    \t                \"Expiration\": \"12/29\",\r
+
+    \t                \"Cvv\": \"455\",\r
+
+    \t                \"PaymentMethod\": 1\r
+
+    \            \t},\r
+
+    \            \"Status\": 2,\r
+
+    \            \"OrderItems\": [\r
+
+    \                {\r
+
+    \t                \"ProductId\": \"5334c996-8457-4cf0-815c-ed2b77c4ff61\",\r
+
+    \t                //\"ProductName\": \"IPhone X\",\r
+
+    \t                \"Quantity\": 2,\r
+
+    \t                \"Price\": 500\r
+
+    \                },\r
+
+    \                {\r
+
+    \t                \"ProductId\": \"c67d6323-e8b1-4bdf-9a75-b0d0d2e7e914\",\r
+
+    \t                //\"ProductName\": \"Samsung 10\",\r
+
+    \t                \"Quantity\": 1,\r
+
+    \t                \"Price\": 500\r
+
+    \                }\r
+
+    \            ]  \r
+
+    \        }\r
+
+    }"
+settings: {}
+order: 1000

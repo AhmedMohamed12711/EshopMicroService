@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{Url}}api/alert/stats"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 2000

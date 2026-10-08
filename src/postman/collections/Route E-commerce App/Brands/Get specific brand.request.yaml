@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/brands/64089ceb24b25627a2531596
+method: GET
+settings: {}
+order: 2000

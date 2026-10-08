@@ -1,0 +1,32 @@
+$kind: http-request
+url: "{{BaseUrl}}/api/Order/CreateOrder"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"basketId\": \"basket123\",\r
+
+    \  \"deliveryMethodId\": 2,\r
+
+    \  \"address\": {\r
+
+    \    \"firstName\": \"Ahmed\",\r
+
+    \    \"lastName\": \"Mohamed\",\r
+
+    \    \"city\": \"Cairo\",\r
+
+    \    \"country\": \"Egypt\",\r
+
+    \    \"street\": \"Nasr City, Building 10\"\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

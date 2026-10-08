@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{ordering_url}}/orders/354c00f6-b04c-46ed-8d6d-f9f42d7bdf98"
+method: DELETE
+settings: {}
+order: 6000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/addresses
+method: POST
+headers:
+  token: ""
+body:
+  type: json
+  content: |-
+    {
+        "name": "Home",
+        "details": "Home details",
+        "phone": "01010700700",
+        "city": "Gizaa"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 1000

@@ -1,0 +1,50 @@
+$kind: http-request
+url: "{{Url}}api/Analysis/12/emotion-timeline"
+method: POST
+body:
+  type: json
+  content: "[\r
+
+    \  {\r
+
+    \    \"timestampOffset\": 0.0,\r
+
+    \    \"emotionLabel\": \"Happy\",\r
+
+    \    \"confidence\": 0.95,\r
+
+    \    \"frameReference\": \"frame_001.jpg\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"timestampOffset\": 2.5,\r
+
+    \    \"emotionLabel\": \"Surprised\",\r
+
+    \    \"confidence\": 0.80,\r
+
+    \    \"frameReference\": \"frame_002.jpg\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"timestampOffset\": 5.0,\r
+
+    \    \"emotionLabel\": \"Neutral\",\r
+
+    \    \"confidence\": 0.70,\r
+
+    \    \"frameReference\": \"frame_003.jpg\"\r
+
+    \  }\r
+
+    ]\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 4000

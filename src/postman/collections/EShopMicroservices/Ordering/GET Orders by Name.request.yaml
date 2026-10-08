@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{ordering_url}}/orders/ORD_2"
+method: GET
+settings: {}
+order: 4000

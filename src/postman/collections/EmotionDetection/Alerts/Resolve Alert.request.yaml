@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{Url}}api/alert/2/resolve"
+method: PATCH
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 4000

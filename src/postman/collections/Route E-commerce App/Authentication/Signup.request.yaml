@@ -1,0 +1,19 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/auth/signup
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "name": "Ahmed Abd Al-Muti",
+        "email":"ahmedmuttii404@gmail.com",
+        "password":"Ahmed@123",
+        "rePassword":"Ahmed@123",
+        "phone":"01010700701"
+    }
+scripts:
+  - type: afterResponse
+    code: pm.environment.set("JWT", pm.response.json().token);
+    language: text/javascript
+settings: {}
+order: 1000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/wishlist/61e81f641904360ec15c6db1
+method: DELETE
+headers:
+  token: ""
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 2000

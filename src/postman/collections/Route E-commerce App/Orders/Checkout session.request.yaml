@@ -1,0 +1,21 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/orders/checkout-session/66c91634ed0dc0016c217bb3?url=http://localhost:3000
+method: POST
+headers:
+  token: ""
+queryParams:
+  url: http://localhost:3000
+body:
+  type: json
+  content: |-
+    {
+        "shippingAddress":{
+            "details": "details",
+            "phone": "01010700999",
+            "city": "Cairo"
+            }
+    }
+auth:
+  type: noauth
+settings: {}
+order: 4000

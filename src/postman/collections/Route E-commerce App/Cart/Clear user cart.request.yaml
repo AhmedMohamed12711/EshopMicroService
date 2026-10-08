@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/cart
+method: DELETE
+headers:
+  token: ""
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 5000

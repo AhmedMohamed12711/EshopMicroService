@@ -1,0 +1,254 @@
+$kind: http-request
+url: "{{Url}}api/analysis/5/process-audio-result"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"audioFilename\": \"test_audio_001.wav\",\r
+
+    \  \"transcribedText\": \"I am feeling very happy today! This is amazing.\",\r
+
+    \  \"audioEmotion\": {\r
+
+    \    \"timeline\": [\r
+
+    \      {\r
+
+    \        \"segmentIndex\": 0,\r
+
+    \        \"timestampOffset\": 0.0,\r
+
+    \        \"probabilities\": {\r
+
+    \          \"joy\": 0.85,\r
+
+    \          \"neutral\": 0.10,\r
+
+    \          \"surprise\": 0.05\r
+
+    \        },\r
+
+    \        \"dominant\": {\r
+
+    \          \"label\": \"joy\",\r
+
+    \          \"confidence\": 0.85,\r
+
+    \          \"category\": \"positive\"\r
+
+    \        },\r
+
+    \        \"intensityWeight\": 0.9,\r
+
+    \        \"frameReference\": \"00:00:00\"\r
+
+    \      },\r
+
+    \      {\r
+
+    \        \"segmentIndex\": 1,\r
+
+    \        \"timestampOffset\": 2.5,\r
+
+    \        \"probabilities\": {\r
+
+    \          \"joy\": 0.90,\r
+
+    \          \"surprise\": 0.10\r
+
+    \        },\r
+
+    \        \"dominant\": {\r
+
+    \          \"label\": \"joy\",\r
+
+    \          \"confidence\": 0.90,\r
+
+    \          \"category\": \"positive\"\r
+
+    \        },\r
+
+    \        \"intensityWeight\": 0.95,\r
+
+    \        \"frameReference\": \"00:00:02.5\"\r
+
+    \      },\r
+
+    \      {\r
+
+    \        \"segmentIndex\": 2,\r
+
+    \        \"timestampOffset\": 5.0,\r
+
+    \        \"probabilities\": {\r
+
+    \          \"joy\": 0.80,\r
+
+    \          \"neutral\": 0.20\r
+
+    \        },\r
+
+    \        \"dominant\": {\r
+
+    \          \"label\": \"joy\",\r
+
+    \          \"confidence\": 0.80,\r
+
+    \          \"category\": \"positive\"\r
+
+    \        },\r
+
+    \        \"intensityWeight\": 0.85,\r
+
+    \        \"frameReference\": \"00:00:05.0\"\r
+
+    \      }\r
+
+    \    ],\r
+
+    \    \"segmentsCount\": 3,\r
+
+    \    \"durationSeconds\": 7.5\r
+
+    \  },\r
+
+    \  \"textEmotion\": {\r
+
+    \    \"sentencesAnalysis\": [\r
+
+    \      {\r
+
+    \        \"sentence\": \"I am feeling very happy today!\",\r
+
+    \        \"probabilities\": {\r
+
+    \          \"joy\": 0.88,\r
+
+    \          \"surprise\": 0.12\r
+
+    \        },\r
+
+    \        \"dominant\": {\r
+
+    \          \"label\": \"joy\",\r
+
+    \          \"confidence\": 0.88,\r
+
+    \          \"category\": \"positive\"\r
+
+    \        },\r
+
+    \        \"intensityWeight\": 0.92\r
+
+    \      },\r
+
+    \      {\r
+
+    \        \"sentence\": \"This is amazing.\",\r
+
+    \        \"probabilities\": {\r
+
+    \          \"joy\": 0.85,\r
+
+    \          \"surprise\": 0.15\r
+
+    \        },\r
+
+    \        \"dominant\": {\r
+
+    \          \"label\": \"joy\",\r
+
+    \          \"confidence\": 0.85,\r
+
+    \          \"category\": \"positive\"\r
+
+    \        },\r
+
+    \        \"intensityWeight\": 0.88\r
+
+    \      }\r
+
+    \    ],\r
+
+    \    \"combinedFinalEmotion\": {\r
+
+    \      \"label\": \"joy\",\r
+
+    \      \"confidence\": 0.865,\r
+
+    \      \"confidencePercent\": 86.5,\r
+
+    \      \"category\": \"positive\"\r
+
+    \    },\r
+
+    \    \"combinedResults\": [\r
+
+    \      {\r
+
+    \        \"label\": \"joy\",\r
+
+    \        \"confidence\": 0.865,\r
+
+    \        \"confidencePercent\": 86.5\r
+
+    \      },\r
+
+    \      {\r
+
+    \        \"label\": \"surprise\",\r
+
+    \        \"confidence\": 0.135,\r
+
+    \        \"confidencePercent\": 13.5\r
+
+    \      }\r
+
+    \    ]\r
+
+    \  },\r
+
+    \  \"finalMultimodalEmotion\": {\r
+
+    \    \"label\": \"joy\",\r
+
+    \    \"confidence\": 0.8575,\r
+
+    \    \"confidencePercent\": 85.75,\r
+
+    \    \"category\": \"positive\"\r
+
+    \  },\r
+
+    \  \"finalMultimodalResults\": [\r
+
+    \    {\r
+
+    \      \"label\": \"joy\",\r
+
+    \      \"confidence\": 0.8575,\r
+
+    \      \"confidencePercent\": 85.75\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"label\": \"surprise\",\r
+
+    \      \"confidence\": 0.1425,\r
+
+    \      \"confidencePercent\": 14.25\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 11000

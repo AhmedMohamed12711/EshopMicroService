@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{yarp_url}}/ordering-service/orders/ORD_2"
+method: GET
+settings: {}
+order: 2000

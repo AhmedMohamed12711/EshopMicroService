@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/auth/verifyResetCode
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "resetCode":"535863"
+    }
+settings: {}
+order: 4000

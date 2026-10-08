@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{catalog_url}}/products/018d2605-1fef-4cbf-b9b4-cbf999a85cc1"
+method: GET
+settings: {}
+order: 2000

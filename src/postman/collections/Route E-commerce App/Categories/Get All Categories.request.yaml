@@ -1,0 +1,18 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/categories
+method: GET
+queryParams:
+  - key: limit
+    value: "2"
+    disabled: true
+  - key: page
+    value: "2"
+    disabled: true
+  - key: keyword
+    value: Books
+    disabled: true
+body:
+  type: json
+  content: ""
+settings: {}
+order: 1000

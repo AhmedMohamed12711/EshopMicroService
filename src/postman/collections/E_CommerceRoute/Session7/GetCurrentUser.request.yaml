@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{BaseUrl}}/api/Authentication/CurrentUser"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 2000

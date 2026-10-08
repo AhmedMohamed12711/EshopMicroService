@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{Url}}api/feedback"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"analysisId\": 1,\r
+
+    \  \"rating\": 5,\r
+
+    \  \"comment\": \"Great analysis!\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
+settings: {}
+order: 1000

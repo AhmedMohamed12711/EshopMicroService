@@ -1,0 +1,9 @@
+$kind: http-request
+name: GET Orders w/ Pagination
+url: "{{yarp_url}}/ordering-service/orders?PageIndex=0&PageSize=2"
+method: GET
+queryParams:
+  PageIndex: "0"
+  PageSize: "2"
+settings: {}
+order: 1000

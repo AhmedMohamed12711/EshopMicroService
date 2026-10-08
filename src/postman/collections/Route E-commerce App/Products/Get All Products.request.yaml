@@ -1,0 +1,41 @@
+$kind: http-request
+url: https://ecommerce.routemisr.com/api/v1/products
+method: GET
+queryParams:
+  - key: limit
+    value: "2"
+    disabled: true
+  - key: sort
+    value: -price
+    disabled: true
+  - key: fields
+    value: title,price
+    disabled: true
+    description: select fields
+  - key: price[gte]
+    value: "100"
+    disabled: true
+    description: filtering
+  - key: page
+    value: "2"
+    disabled: true
+  - key: keyword
+    value: new
+    disabled: true
+  - key: brand
+    value: 6212b6b488f2cee15c5db3c8
+    disabled: true
+  - key: price[lte]
+    value: "13"
+    disabled: true
+  - key: category[in]
+    value: 6212b67488f2cee15c5db3ba
+    disabled: true
+  - key: category[in]
+    value: 61f3157c6bdf4c518f9bbcb9
+    disabled: true
+body:
+  type: text
+  content: ""
+settings: {}
+order: 1000
