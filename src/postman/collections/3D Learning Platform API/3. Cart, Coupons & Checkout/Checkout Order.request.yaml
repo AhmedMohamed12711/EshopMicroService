@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/orders/checkout"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "gateway": "Paymob"
+    }
+order: 4000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/cms/newsletter/subscribe"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "email": "ahmedmohamed00521@gmail.com"
+    }
+order: 2000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/certificates/verify/CERT-3D-SampleCode123"
+method: GET
+order: 2000

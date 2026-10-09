@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/api/learning/progress"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "courseId": "{{course_id}}",
+      "lessonId": "{{lesson_id}}",
+      "watchedSeconds": 300,
+      "markAsCompleted": true
+    }
+order: 1000

@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/courses/{{course_id}}/reviews"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "courseId": "{{course_id}}",
+      "rating": 5,
+      "comment": "Excellent 3D ArchViz masterclass! Highly recommended."
+    }
+order: 3000

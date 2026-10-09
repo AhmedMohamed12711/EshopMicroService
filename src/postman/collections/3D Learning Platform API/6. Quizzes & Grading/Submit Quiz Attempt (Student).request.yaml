@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/quizzes/{{quiz_id}}/attempts"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "answers": {}
+    }
+order: 2000

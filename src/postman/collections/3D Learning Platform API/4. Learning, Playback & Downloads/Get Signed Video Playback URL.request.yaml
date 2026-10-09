@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/learning/playback/{{course_id}}/{{lesson_id}}?storageKey=videos/lesson1.mp4"
+method: GET
+headers:
+  Authorization: Bearer {{bearer_token}}
+queryParams:
+  storageKey: videos/lesson1.mp4
+order: 3000

@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{baseUrl}}/api/quizzes"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "courseId": "{{course_id}}",
+      "title": "V-Ray Lighting Exam",
+      "description": "Test your knowledge on HDRI & Sun lighting",
+      "passingScorePercentage": 70,
+      "maxAttempts": 3,
+      "questions": [
+        {
+          "questionText": "What is V-Ray Sun?",
+          "options": ["Light source", "Texture map", "Camera setting"],
+          "correctOptionIndex": 0
+        }
+      ]
+    }
+order: 1000

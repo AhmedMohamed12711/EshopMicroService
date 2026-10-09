@@ -1,0 +1,15 @@
+$kind: http-request
+name: Approve / Publish Course
+url: "{{baseUrl}}/api/admin/courses/{{course_id}}/approve"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "approve": true,
+      "rejectionReason": null
+    }
+order: 3000

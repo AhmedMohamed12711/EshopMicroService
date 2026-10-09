@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/courses/vray-6-masterclass"
+method: GET
+order: 2000

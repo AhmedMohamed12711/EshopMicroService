@@ -1,0 +1,9 @@
+$kind: collection
+description: Complete Postman collection for 3D & ArchViz Learning Platform API endpoints.
+variables:
+  baseUrl: https://localhost:7141
+  bearer_token: ""
+  course_id: 11111111-1111-1111-1111-111111111111
+  lesson_id: 11111111-0000-0000-0000-000000000001
+  quiz_id: 33333333-3333-3333-3333-333333333333
+  post_id: 44444444-4444-4444-4444-444444444444

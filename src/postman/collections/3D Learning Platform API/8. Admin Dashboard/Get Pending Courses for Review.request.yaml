@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/admin/courses/pending"
+method: GET
+headers:
+  Authorization: Bearer {{bearer_token}}
+order: 2000

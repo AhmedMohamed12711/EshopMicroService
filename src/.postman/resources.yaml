@@ -1,14 +1,19 @@
 workspace:
   id: c15b5d23-7c7b-42fe-8185-c25c18a7a32b
+
 localResources:
   specs:
     - ../Services/Discount/Discount.Grpc/Protos/discount.proto
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
 cloudResources:
   collections:
     ../postman/collections/EShopMicroservices: 40183373-39df13d2-ce80-4bfa-b757-de9caf712b31
     ../postman/collections/EmotionDetection: 40183373-cd8d633d-ae33-4f0f-8f3a-59b50bd42d7d
     ../postman/collections/E_CommerceRoute: 40183373-861389b9-b497-4289-bbee-cbaaa8b21f86
     ../postman/collections/Route E-commerce App: 40183373-926334c5-9bd5-45e7-8188-92fbde0240ed
+    ../postman/collections/3D Learning Platform API: 3d7e69b6-f883-4fd0-8678-7f35b54e4532
   environments:
     ../postman/environments/Localhost.environment.yaml: 40183373-7b1244c6-2d63-4680-bde4-19e27e3c1e4d
     ../postman/environments/Docker.environment.yaml: 40183373-fc0bbc3f-768a-47cb-af69-b93eff5dc9eb

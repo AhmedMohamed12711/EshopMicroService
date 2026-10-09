@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/cart/coupons/apply"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "couponCode": "SAVE20"
+    }
+order: 3000

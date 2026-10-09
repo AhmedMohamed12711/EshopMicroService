@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/api/certificates/issue"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "courseId": "{{course_id}}",
+      "studentName": "Ahmed Mohamed"
+    }
+order: 1000

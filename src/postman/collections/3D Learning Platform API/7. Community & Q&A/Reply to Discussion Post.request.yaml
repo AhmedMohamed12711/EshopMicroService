@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/community/posts/{{post_id}}/replies"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "content": "Try enabling Corona Denoising with High quality mode."
+    }
+order: 3000

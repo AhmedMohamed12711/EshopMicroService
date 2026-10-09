@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/api/community/posts"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "courseId": "{{course_id}}",
+      "lessonId": "{{lesson_id}}",
+      "title": "How to eliminate noise in Corona Renderer?",
+      "content": "I am getting noise in interior renders after 200 passes."
+    }
+order: 1000

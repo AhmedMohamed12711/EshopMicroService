@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/api/courses?search=V-Ray&level=AllLevels"
+method: GET
+queryParams:
+  search: V-Ray
+  level: AllLevels
+order: 1000

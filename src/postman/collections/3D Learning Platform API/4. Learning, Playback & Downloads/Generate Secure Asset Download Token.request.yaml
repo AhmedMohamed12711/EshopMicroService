@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/learning/download-token"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: |-
+    {
+      "courseOrItemId": "{{course_id}}",
+      "resourceKey": "assets/3d_scene_max.zip",
+      "fileName": "3d_scene_max.zip"
+    }
+order: 4000
